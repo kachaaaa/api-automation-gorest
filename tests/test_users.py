@@ -5,7 +5,7 @@ from utils.config import BASE_URL
 
 load_dotenv()
 TOKEN = os.getenv("GOREST_TOKEN")
-assert TOKEN is not None, "GOREST_TOKEN не задан в .env"
+assert TOKEN is not None
 
 def test_get_users():
     headers = {"Authorization": f"Bearer {TOKEN}"}
